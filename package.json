@@ -1,0 +1,27 @@
+{
+  "name": "transcoder",
+  "version": "1.0.0",
+  "description": "Converts videos to HLS with adaptive streaming",
+  "scripts": {
+    "format": "prettier --check \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|css|scss)\"",
+    "format:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|css|scss)\"",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "api",
+    "worker",
+    "workflows",
+    "sdk"
+  ],
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "3.4.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}

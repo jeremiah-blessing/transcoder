@@ -1,0 +1,22 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "lint": "eslint .",
+    "dev": "nodemon worker.ts --watch ./worker.ts --watch ../workflows"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@temporalio/worker": "^1.11.6",
+    "ts-node": "^10.9.2"
+  }
+}
