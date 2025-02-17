@@ -8,7 +8,7 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jeremiah Blessing",
   "license": "MIT",
   "workspaces": [
     "api",

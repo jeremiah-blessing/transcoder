@@ -7,8 +7,8 @@
     "build.watch": "tsc --build -w --preserveWatchOutput"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jeremiah Blessing",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/fluent-ffmpeg": "^2.1.27",

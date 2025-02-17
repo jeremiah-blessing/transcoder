@@ -4,7 +4,7 @@ services:
     environment:
       - MONGODB_DATABASE="videos-api"
     volumes:
-      - youtube_mongodb_data:/data/db
+      - transcoder_mongodb_data:/data/db
     ports:
       - 27017:27017
   minio:
@@ -19,7 +19,7 @@ services:
       - '9090:9000'
       - '9091:9001'
     volumes:
-      - youtube_minio_data:/data
+      - transcoder_minio_data:/data
     healthcheck:
       test: ['CMD', 'mc', 'ready', 'local']
       interval: 1s
@@ -28,7 +28,7 @@ services:
       start_period: 1s
 
 volumes:
-  youtube_minio_data:
+  transcoder_minio_data:
     driver: local
-  youtube_mongodb_data:
+  transcoder_mongodb_data:
     driver: local

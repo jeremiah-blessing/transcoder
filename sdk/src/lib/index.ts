@@ -1,1 +1,1 @@
-export { useUpload } from './useUpload';
+export { VideoPicker } from './VideoPicker';

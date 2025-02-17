@@ -8,8 +8,8 @@
     "dev": "nodemon worker.ts --watch ./worker.ts --watch ../workflows"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jeremiah Blessing",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "nodemon": "^3.1.9",
